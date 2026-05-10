@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Something went wrong</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f6f1;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    h1 { font-size: 1.4rem; margin-bottom: 0.75rem; color: #111; }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.65rem 1.5rem;
+      background: #b5893a;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    a:hover { background: #9a7230; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">⚠️</div>
+    <h1>Something went wrong</h1>
+    <p>
+      We could not send your worksheets for <strong>{{ book_title }}</strong> right now.
+      Please try again — it usually resolves in a moment.
+    </p>
+    <a href="/{{ book_id }}">Try Again</a>
+  </div>
+</body>
+</html>

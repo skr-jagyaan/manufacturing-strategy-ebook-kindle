@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worksheets Sent!</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f6f1;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .check {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+
+    .note {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">✅</div>
+    <h1>Check your inbox, {{ name }}!</h1>
+    <p>
+      Your worksheets for <strong>{{ book_title }}</strong> are on their way.
+      Check your inbox — it should arrive within a minute.
+    </p>
+    <p>
+      If you don't see it, check your spam folder and mark it as not spam.
+    </p>
+    <p class="note">
+      The Manufacturing Strategy Series · Sudharsan K R
+    </p>
+  </div>
+</body>
+</html>
